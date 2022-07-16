@@ -1,0 +1,74 @@
+.container {
+    width: 1024px;
+    min-height: 600px;
+    margin: 50px auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p {
+    font-size: 2rem;
+}
+
+form {
+    text-align: left;
+    margin-left: 350px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+label:first-of-type {
+    margin-right: 30px;
+}
+
+label:last-of-type {
+    margin-right: 6px;
+}
+
+.add_button {
+    width: 50px;
+    margin-left: 2px;
+}
+
+.add_button:hover {
+    cursor: pointer;
+}
+
+table {
+    margin-top: 35px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid rgba(103, 102, 102, 0.669);
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(221, 220, 220);
+}
+
+span {
+    color: rgb(254, 126, 126);
+}
+
+span:hover {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+
+.newRow {
+    color: rgb(48, 48, 48);
+    font-size: 1rem;
+    display: none;
+}
+
+tr:hover {
+    background-color: rgb(161, 161, 161);
+}

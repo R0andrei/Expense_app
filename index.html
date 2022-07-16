@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Expense App</p>
+        <form name="form" onsubmit="return false">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" placeholder="dd/mm/yyyy">
+            <input type="submit" value="Add" class="add_button" onclick="Add()">
+            <br>
+            <label for="expense">Expense:</label>
+            <input type="text" name="expense" id="expense" placeholder="Books" size="20">
+            <br>
+            <label for="amount">Amount:</label>
+            <input type="text" name="amount" id="amount" placeholder="200" size="20">
+        </form>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Amount [euro]</th>
+                <th></th>
+            </tr>
+            <tr class="newRow">
+                <td class="newDate"></td>
+                <td class="newExpense"></td>
+                <td class="newSum"></td>
+                <td><span class="material-symbols-outlined close" onclick="Delete(0)">close</span></td>
+            </tr>
+            <tr class="newRow">
+                <td class="newDate"></td>
+                <td class="newExpense"></td>
+                <td class="newSum"></td>
+                <td><span class="material-symbols-outlined close" onclick="Delete(1)">close</span></td>
+            </tr>
+            <tr class="newRow">
+                <td class="newDate"></td>
+                <td class="newExpense"></td>
+                <td class="newSum"></td>
+                <td><span class="material-symbols-outlined close" onclick="Delete(2)">close</span></td>
+            </tr>
+            <tr class="newRow">
+                <td class="newDate"></td>
+                <td class="newExpense"></td>
+                <td class="newSum"></td>
+                <td><span class="material-symbols-outlined close" onclick="Delete(3)">close</span></td>
+            </tr>
+            <tr class="newRow">
+                <td class="newDate"></td>
+                <td class="newExpense"></td>
+                <td class="newSum"></td>
+                <td><span class="material-symbols-outlined close" onclick="Delete(4)">close</span></td>
+            </tr>
+            <tr>
+                <td colspan="2">Total:</td>
+                <td colspan="2" id="total">0</td>
+            </tr>
+        </table>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
