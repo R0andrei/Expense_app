@@ -5,7 +5,7 @@ var xSum = document.getElementsByClassName("newSum");
 var visibility = document.getElementsByClassName("newRow");
 var len = visibility.length;
 var total = 0;
-var calc = document.getElementById("total")
+var calc = document.getElementById("total");
 
 function Add() {
     let addDate = document.getElementById("date").value; //necesar sa fie ID
