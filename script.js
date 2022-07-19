@@ -21,6 +21,7 @@ function Add() {
     total += Number(addSum);
     index++;
     calc.innerText = total;
+    bubbleSort();
 }
 function Delete(n) {
     if (n == len) {
@@ -39,4 +40,28 @@ function Delete(n) {
         index--;
     }
     calc.innerText = total;
+}
+
+function bubbleSort() 
+{ 
+let i, j; 
+for (i = 0; i < len-1; i++) 
+{ 
+    for (j = 0; j < len-i-1; j++) 
+    { 
+        if (new Date(xDate[j].innerText) > new Date(xDate[j+1].innerText))  //convert string to date obj
+        { 
+            let temp1 = xDate[j].innerText;
+            let temp2 = xExpense[j].innerText;
+            let temp3 = xSum[j].innerText;
+            xDate[j].innerText = xDate[j + 1].innerText;
+            xExpense[j].innerText = xExpense[j + 1].innerText;
+            xSum[j].innerText = xSum[j + 1].innerText;
+            xDate[j+1].innerText = temp1;
+            xExpense[j+1].innerText = temp2;
+            xSum[j+1].innerText = temp3;
+        } 
+    } 
+  
+} 
 }
