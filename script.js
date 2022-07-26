@@ -8,7 +8,7 @@ var total = 0;
 var calc = document.getElementById("total");
 
 function Add() {
-    let addDate = document.getElementById("date").value; //necesar sa fie ID
+    let addDate = document.getElementById("date").value; //doar ID
     let addExpense = document.getElementById("expense").value;
     let addSum = document.getElementById("amount").value;
     if (index > visibility.length) {
